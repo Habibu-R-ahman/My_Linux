@@ -2,7 +2,7 @@
 
 Speed() {
     local anu=$(ping google.com -c 1 | grep -o "time=[0-9]*")
-    local NUMBER=$(echo ${anu//[^0-9]/} | grep -o -E '[0-9]+')
+    local NUMBER=$(echo ${anu//[^0-9]/})
     echo $NUMBER
 }
 
