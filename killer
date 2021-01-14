@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Saitama: I’m a guy who’s a HERO for Fun"
+read -p "ME: Please kill " Process
+echo "Saitama: I will kill all of them $(pidof $Process) with a Single PUNCH"
+killall -9 $Process
+echo "Done!!!"
